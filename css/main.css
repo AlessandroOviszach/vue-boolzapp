@@ -39,10 +39,8 @@ img {
     border-right: 1px solid #dcdcdc;
 }
 
-.chat {
-    width: 60%;
-}
 
+/* user section */
 .user-container {
     display: flex;
     align-items: center;
@@ -57,6 +55,7 @@ img {
 }
 
 .chat {
+    width: 60%;
     border-radius: 0 10px 0 0;
 }
 
@@ -88,9 +87,92 @@ img {
 .icon-container i { 
     font-size: 150%;
     margin: 0 10px;
-    color: #bababa;
 }
 
 .icon-container:last-child {
     margin-right: 20px;
+}
+
+/* notifications banner section*/
+.notifications-banner {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #a2dffe;
+}
+
+.icon-cotainer div {
+    background-color: white;
+    padding: 10px;
+    margin: 0 10px 0 20px;
+    border-radius: 50%;
+}
+
+.icon-cotainer i {
+    font-size: 130%;
+}
+
+.text-notification-banner {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-notification-banner a {
+    color: #688ea2;
+}
+
+/* search section */
+
+.search-container {
+    background-color: #ededed;
+    height: 50px;
+    padding: 7px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.search-bar div {
+    display: flex;
+    align-items: center;
+    height: 70%;
+    border-right: 2px solid #dcdcdc;
+}
+
+.search-bar i {
+    margin: 0 30px;
+}
+
+.search-bar span {
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* frequent colors */
+.grey-icon {
+    color: #bababa;
+}
+
+.light-blue {
+    color: #a2dffe;
 }
