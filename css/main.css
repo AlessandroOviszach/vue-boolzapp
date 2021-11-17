@@ -20,12 +20,67 @@ body {
     align-items: center;
 }
 
+img {
+    object-fit: cover;
+}
+
 /* Utilities */
 
 .container {
+    display: flex;
     width: 80%;
     min-width: 900px;
     height: 95%;
     background-color: white;
     border-radius: 10px;
+}
+
+.sidebar {
+    width: 40%;
+    border-right: 1px solid #dcdcdc;
+}
+
+.chat {
+    width: 60%;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    height: 100%;
+
+}
+
+.user {
+    border-radius: 10px 0 0 0;
+    align-items: center;
+}
+
+.chat {
+    border-radius: 0 10px 0 0;
+}
+
+.user,
+.chat {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: #ededed;
+}
+
+.img-profile-container {
+    height: 70%;
+    width: 50px;
+    margin-left: 10px
+}
+
+.avatar {
+    height: 100%;
+    border-radius: 50%;
+}
+
+.icon-container {
+    height: 50%;
+
 }

@@ -6,11 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp Milestone 1</title>
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
     <div id="app" class="container">
-        <section class="contacts"></section>
+        <section class="sidebar">
+            <header class="user">
+                <!-- spazio del profilo utente -->
+                <div class="user-container">
+                    <div class="img-profile-container">
+                        <img class="avatar" src="./img/avatar_io.jpg" alt="ME">
+                    </div>
+                    <span class="username">Nome Utente</span>
+                </div>
+
+                <div class="icon-container">
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </header>
+    
+    
+            <main>
+                <div>
+                    <!-- messaggio di attivazione notifiche -->
+                </div>
+    
+                <section class="contacts">
+                    <div>
+                        <!-- barra di ricerca dei contatti -->
+                    </div>
+    
+                    <div>
+                        <!-- contatti inseriti con un v-for  -->
+                    </div>
+                </section>
+            </main>
+        </section>
 
 
         <section class="chat"></section>
