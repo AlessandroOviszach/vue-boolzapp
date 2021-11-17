@@ -152,7 +152,21 @@ img {
     margin-left: 10px;
 }
 
+/* contact section */
+.contact-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 1px solid #dcdcdc;
+}
 
+.contacts .contact-container:last-child {
+    border-bottom: none;
+}
+
+.contact-container span {
+    margin-left: 15px;
+}
 
 
 
