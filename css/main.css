@@ -25,7 +25,6 @@ img {
 }
 
 /* Utilities */
-
 .container {
     display: flex;
     width: 80%;
@@ -49,12 +48,12 @@ img {
     align-items: center;
     flex-grow: 1;
     height: 100%;
-
 }
 
 .user {
     border-radius: 10px 0 0 0;
     align-items: center;
+    height: 100%;
 }
 
 .chat {
@@ -81,6 +80,17 @@ img {
 }
 
 .icon-container {
-    height: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
 
+.icon-container i { 
+    font-size: 150%;
+    margin: 0 10px;
+    color: #bababa;
+}
+
+.icon-container:last-child {
+    margin-right: 20px;
 }
