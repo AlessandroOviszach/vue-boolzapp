@@ -176,6 +176,7 @@ img {
     width: 65%;
     height: 100%;
     display: flex;
+    flex-direction: column;
 }
 
 header.chat {
@@ -183,12 +184,30 @@ header.chat {
     border-radius: 0 10px 0 0;
 }
 
-main {
+main.message-container {
+    height: 100%;
     background-image: url('../img/mine.jpg');
     background-position: center;
 }
 
 .message-input-container {
     height: 50px;
-    width: 100%;
+    background-color: #ededed;
+    display: flex;
+    align-items: center;
+    border-radius: 0 0 10px 0;
+}
+
+.emoji {
+    margin: 0 30px;
+    font-size: 130%;
+}
+
+.input-message {
+    height: 30px;
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    color: #bababa;
 }
