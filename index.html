@@ -60,9 +60,10 @@
                     </div>
 
                     <div
-                    v-for="contact in contacts"
+                    v-for="(contact, index) in contacts"
                     class="contact-container"
-                    @click="SetActiveContact"
+                    :class="{active: index === ActiveContact}"
+                    @click="SetActiveContact(index)"
                     >
                         <!-- contatti inseriti con un v-for -->
                         <div class="img-profile-container">

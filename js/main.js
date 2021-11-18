@@ -92,8 +92,8 @@ const app = new Vue({
     },
 
     methods : {
-        SetActiveContact() {
-            console.log('click')
+        SetActiveContact(index) {
+            this.ActiveContact = index;
         }
     }
   });
