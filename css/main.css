@@ -20,6 +20,13 @@ body {
     align-items: center;
 }
 
+header {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    background-color: #ededed;
+}
+
 img {
     object-fit: cover;
 }
@@ -35,7 +42,7 @@ img {
 }
 
 .sidebar {
-    width: 40%;
+    width: 35%;
     border-right: 1px solid #dcdcdc;
 }
 
@@ -51,20 +58,6 @@ img {
 .user {
     border-radius: 10px 0 0 0;
     align-items: center;
-    height: 100%;
-}
-
-.chat {
-    width: 60%;
-    border-radius: 0 10px 0 0;
-}
-
-.user,
-.chat {
-    display: flex;
-    align-items: center;
-    height: 10%;
-    background-color: #ededed;
 }
 
 .img-profile-container {
@@ -169,19 +162,6 @@ img {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* frequent colors */
 .grey-icon {
     color: #bababa;
@@ -189,4 +169,26 @@ img {
 
 .light-blue {
     color: #a2dffe;
+}
+
+/* Chat section */
+.message-area {
+    width: 65%;
+    height: 100%;
+    display: flex;
+}
+
+header.chat {
+    width: 100%;
+    border-radius: 0 10px 0 0;
+}
+
+main {
+    background-image: url('../img/mine.jpg');
+    background-position: center;
+}
+
+.message-input-container {
+    height: 50px;
+    width: 100%;
 }
