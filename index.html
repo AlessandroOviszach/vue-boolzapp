@@ -83,9 +83,9 @@
                 <!-- spazio del profilo utente -->
                 <div class="user-container">
                     <div class="img-profile-container">
-                        <img class="avatar" src="./img/avatar_1.jpg" alt="ME">
+                        <img class="avatar" :src="`./img/avatar${contacts[ActiveContact].avatar}.jpg`" alt="ME">
                     </div>
-                    <span class="username">Nome Utente</span>
+                    <span class="username"> {{ contacts[ActiveContact].name }} </span>
                 </div>
 
                 <!-- icon section -->
@@ -117,6 +117,8 @@
                     class="input-message" 
                     type="text"
                     placeholder="Scrivi un messaggio"
+                    v-model.trim="NewMessage"
+                    @keyup.enter="AddNewMessage"
                     >
 
                     <div class="emoji">
