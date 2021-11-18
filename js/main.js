@@ -106,6 +106,14 @@ const app = new Vue({
                 });
 
                 this.NewMessage = '';
+
+                setTimeout(() => {
+                    this.contacts[this.ActiveContact].messages.push({
+                        date: '10/01/2020 15:50:00',
+                        text: 'ok',
+                        status: 'received'
+                    });
+                }, 1000);
             }
         }
     }
