@@ -44,7 +44,7 @@
 
                     <div class="text-notification-banner">
                         <span>Ricevi notifiche di nuovi messaggi</span>
-                        <span><a href="">Attiva notifiche desktop</a></span>
+                        <span><a href="#">Attiva notifiche desktop</a></span>
                     </div>
                 </div>
 
@@ -61,7 +61,9 @@
 
                     <div
                     v-for="contact in contacts"
-                    class="contact-container">
+                    class="contact-container"
+                    @click="SetActiveContact"
+                    >
                         <!-- contatti inseriti con un v-for -->
                         <div class="img-profile-container">
                             <img class="avatar" :src="`./img/avatar${contact.avatar}.jpg`" alt="ME">
@@ -94,8 +96,14 @@
             </header>
 
             <main class="message-container">
-
-                
+                <div
+                v-for="message in contacts[ActiveContact].messages"
+                class="message"
+                :class="message.status"
+                >
+                    <span class="message-text">{{ message.text }}</span>
+                    <span class="message-time">{{ message.date }}</span>
+                </div>
             </main>
 
             <footer class="message-input">

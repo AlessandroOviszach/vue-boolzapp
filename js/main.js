@@ -1,8 +1,3 @@
-
-
-
-
-
 const app = new Vue({
     el: '#app',
 
@@ -93,5 +88,12 @@ const app = new Vue({
             },
         ],
 
+        ActiveContact : 0,
+    },
+
+    methods : {
+        SetActiveContact() {
+            console.log('click')
+        }
     }
-  })
+  });
